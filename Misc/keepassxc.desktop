@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=KeePassXC
+Exec=/home/roy/Downloads/Apps/KeePassXC/KeePassXC-2.6.6-x86_64.AppImage
+Icon=/home/roy/Downloads/Apps/KeePassXC/64px-KeePassXC.png
+Categories=Network;RemoteAccess;
+

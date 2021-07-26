@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Plank2
+GenericName=Dock
+Comment=Stupidly simple.
+Categories=Utility;
+Type=Application
+Exec=plank -n dock2
+Icon=plank
+Terminal=false
+NoDisplay=false

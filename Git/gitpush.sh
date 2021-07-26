@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+repofile="Repo_list.txt"    # read repos from list
+echo "================================================================"
+for repo in $(cat $repofile)    # recursively update local+remote repos
+do
+    cd $repo
+
+    echo "CHECKING REPO \"$PWD\" ===>"
+    echo ""
+
+    GCOUNT=$(git status --porcelain=v1 2>/dev/null | wc -l)
+    if [ $GCOUNT -ne 0 ]; then
+
+        git status
+
+        echo "--------------------------------------"
+        echo "Committing changes ===>"
+        echo ""
+
+        git add .
+
+        DATETIME=$(date)
+        git commit -m "Changes made on $DATETIME"
+
+        echo "--------------------------------------"
+        echo "Pushing changes ===>"
+        echo ""
+
+        git push
+
+        echo "--------------------------------------"
+        echo "Checking status ===>"
+        echo ""
+
+    fi
+    git status
+    echo "================================================================"
+done

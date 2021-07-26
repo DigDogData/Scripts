@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=PDFSAM
+Exec=/home/roy/Downloads/Apps/PDFSam/PDFsam-Basic.AppImage
+Icon=/home/roy/Downloads/Apps/PDFSam/basic.svg
+Categories=Office;WordProcessor;
+

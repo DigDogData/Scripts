@@ -1,0 +1,3 @@
+/home/roy/.dotfiles
+/home/roy/Documents/VimWiki
+/home/roy/Documents/DS/Codes

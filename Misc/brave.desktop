@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Brave
+Exec=/home/roy/Downloads/Apps/Brave/Brave_Web_Browser-x86_64.AppImage
+Icon=/home/roy/Downloads/Apps/Brave/external-content.duckduckgo.com.jpeg
+Categories=Network;WebBrowser;
+Terminal=false
+
