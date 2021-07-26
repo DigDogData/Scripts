@@ -1,2 +1,0 @@
-#!/usr/bin/env bash
-rsync -aHv --delete --delete-excluded --exclude-from=exclude_list.txt --log-file=/home/roy/Documents/Scripts/Backup/Logs/$(date +%Y%m%d)_rsync_local.log /home/roy/ /media/roy/LinBackup/home/roy

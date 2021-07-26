@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-repofile="Repo_list.txt"    # read repos from list
+repofile="/home/roy/Documents/Scripts/Git/Repo_list.txt"    # read repos from list
 echo "================================================================"
 for repo in $(cat $repofile)    # recursively update local+remote repos
 do
