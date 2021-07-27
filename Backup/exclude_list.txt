@@ -2,7 +2,7 @@
 #.config/Brave*
 .hypnotix
 .fzf
-#.local/lib
+.local/lib
 .local/share/data
 .local/share/evolution
 .local/share/flatpak
