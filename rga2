@@ -11,7 +11,7 @@ IFS=: read -ra selected < <(
      --no-heading \
      --hidden \
      --smart-case \
-     --glob "!{.cache,.git,.local,.mozilla,.pyenv,.steam}" "${*:-}" |
+     --glob "!{.cache,.git,.local,.mozilla,.pyenv,.steam,.thunderbird,BraveSoftware}" "${*:-}" |
     fzf --ansi \
         --color "hl:-1:underline,hl+:-1:underline:reverse" \
         --delimiter ":" \

@@ -10,7 +10,7 @@ IFS=: read -ra selected < <(
      --no-heading \
      --hidden \
      --smart-case \
-     --glob "!{.cache,.git,.local,.mozilla,.pyenv,.steam}" "${*:-}" |
+     --glob "!{.cache,.git,.local,.mozilla,.pyenv,.steam,.thunderbird,BraveSoftware}" "${*:-}" |
     fzf --delimiter ":" \
         --preview "head -$LINES {1}" \
         --preview-window "right:50%" \
