@@ -5,13 +5,16 @@
 # 3. Open the file in Vim
 # (From https://sourcegraph.com/github.com/junegunn/fzf/-/blob/ADVANCED.md#ripgrep-integration)
 IFS=: read -ra selected < <(
-  rg --column \
+  rg --color=always \
+     --column \
      --line-number \
      --no-heading \
      --hidden \
      --smart-case \
      --glob "!{.cache,.git,.local,.mozilla,.pyenv,.steam}" "${*:-}" |
-    fzf --delimiter ":" \
+    fzf --ansi \
+        --color "hl:-1:underline,hl+:-1:underline:reverse" \
+        --delimiter ":" \
         --preview "head -$LINES {1}" \
         --preview-window "right:50%" \
         --bind "ctrl-/:toggle-preview"
