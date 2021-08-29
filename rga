@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# 1. Search for text in files using Ripgrep
+# 2. Interactively narrow down the list using fzf
+# 3. Open the file in Vim
+# (From https://sourcegraph.com/github.com/junegunn/fzf/-/blob/ADVANCED.md#ripgrep-integration)
+IFS=: read -ra selected < <(
+  rg --column --line-number --no-heading --hidden --smart-case \
+      --glob "!{.cache,.git,.local,.mozilla,.pyenv,.steam}" "${*:-}" |
+    fzf --delimiter ":" --preview "head -$LINES {1}"
+)
+[ -n "${selected[0]}" ] && vim "${selected[0]}" "+${selected[1]}"
