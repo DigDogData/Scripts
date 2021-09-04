@@ -4,11 +4,10 @@
     workgroup = WORKGROUP
     server min protocol = NT1
     client min protocol = NT1
+    unix extensions = yes
     security = user
     map to guest = Bad User
     usershare allow guests = yes
-    ;hosts allow = 192.168.0.0/16
-    ;hosts deny = 0.0.0.0/0
 
 ;[homes]
     ;comment = Home folder
@@ -22,7 +21,7 @@
     path = /home/roy
     read only = no
     browseable = yes
-    guest ok = yes
+    guest ok = no
     force user = roy
     force group = roy
     create mask = 0664
