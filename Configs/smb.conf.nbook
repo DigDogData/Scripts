@@ -21,7 +21,7 @@
     path = /home/roy
     read only = no
     browseable = yes
-    guest ok = no
+    guest ok = yes
     force user = roy
     force group = roy
     create mask = 0664

@@ -4,11 +4,10 @@
     workgroup = WORKGROUP
     server min protocol = NT1
     client min protocol = NT1
+    unix extensions = yes
     security = user
     map to guest = Bad User
     usershare allow guests = yes
-    ;hosts allow = 192.168.0.0/16
-    ;hosts deny = 0.0.0.0/0
 
 ;[homes]
     ;comment = Home Folder
@@ -40,9 +39,9 @@
    read only = no
    create mask = 0755
 
-[Print$]
-   comment = Printer Drivers
-   path = /var/lib/samba/printers
-   browseable = yes
-   read only = yes
-   guest ok = no
+;[Print$]
+   ;comment = Printer Drivers
+   ;path = /var/lib/samba/printers
+   ;browseable = yes
+   ;read only = yes
+   ;guest ok = no
