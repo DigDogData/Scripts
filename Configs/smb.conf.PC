@@ -4,41 +4,38 @@
     workgroup = WORKGROUP
     server min protocol = NT1
     client min protocol = NT1
-    log file = /var/log/samba/log.%m
-    max log size = 1000
-    logging = file
-    ;security = user
+    security = user
     map to guest = Bad User
-    ;name resolve order = bcast host
     usershare allow guests = yes
-    hosts allow = 192.168.0.0/16
-    hosts deny = 0.0.0.0/0
+    ;hosts allow = 192.168.0.0/16
+    ;hosts deny = 0.0.0.0/0
 
-[homes]
-    comment = Roy
-    read only = no
-    browseable = yes
-    create mask = 0664
-    directory mask = 0775
-
-;[roy]
-    ;comment = Roy
-    ;path = /home/roy
+;[homes]
+    ;comment = Home Folder
     ;read only = no
     ;browseable = yes
-    ;guest ok = yes
-    ;force user = roy
-    ;force group = roy
     ;create mask = 0664
     ;directory mask = 0775
-    ;force create mode = 0664
-    ;force directory mode = 0775
+    ;valid users = %S
 
-[printers]
+[Roy]
+    comment = Home folder
+    path = /home/roy
+    read only = no
+    browseable = yes
+    guest ok = yes
+    force user = roy
+    force group = roy
+    create mask = 0664
+    directory mask = 0775
+    force create mode = 0664
+    force directory mode = 0775
+
+[Printer]
    comment = Deskjet-895C
    browseable = yes
    path = /var/spool/samba
    printable = yes
-   guest ok = no
-   read only = yes
-   create mask = 0700
+   guest ok = yes
+   read only = no
+   create mask = 0755
