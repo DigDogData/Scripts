@@ -33,9 +33,16 @@
 
 [Printer]
    comment = Deskjet-895C
-   browseable = yes
+   browseable = no
    path = /var/spool/samba
    printable = yes
    guest ok = yes
    read only = no
    create mask = 0755
+
+[Print$]
+   comment = Printer Drivers
+   path = /var/lib/samba/printers
+   browseable = yes
+   read only = yes
+   guest ok = no
