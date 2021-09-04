@@ -1,22 +1,23 @@
 #!/usr/bin/env bash
 
-read -p "Sure you want to *PULL* repos? " response
-
-if [ $response == "yes" ]; then
-
-    repofile="/home/roy/Documents/Scripts/Git/Repo_list.txt"  # read repos from list
-    echo "================================================================"
-    for repo in $(cat $repofile)    # recursively update local+remote repos
-    do
-        cd $repo
-
-        echo "PULLING REPO \"$PWD\" ===>"
-        echo ""
-
-        git pull
-
-        echo "================================================================"
-    done
-else
-    echo "Exiting..."
-fi
+echo "Use <git pull> instead."
+#read -p "Sure you want to *PULL* repos? " response
+#
+#if [ $response == "yes" ]; then
+#
+#    repofile="/home/roy/Documents/Scripts/Git/Repo_list.txt"  # read repos from list
+#    echo "================================================================"
+#    for repo in $(cat $repofile)    # recursively update local+remote repos
+#    do
+#        cd $repo
+#
+#        echo "PULLING REPO \"$PWD\" ===>"
+#        echo ""
+#
+#        git pull
+#
+#        echo "================================================================"
+#    done
+#else
+#    echo "Exiting..."
+#fi
