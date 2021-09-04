@@ -4,7 +4,7 @@
     workgroup = WORKGROUP
     server min protocol = NT1
     client min protocol = NT1
-    unix extensions = yes
+    ;unix extensions = yes
     security = user
     map to guest = Bad User
     usershare allow guests = yes
