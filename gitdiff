@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+repofile="/home/roy/Documents/Scripts/Git/Repo_list.txt"    # read repos from list
+echo "========================================================================"
+for repo in $(cat $repofile)    # recursively update local+remote repos
+do
+    cd $repo
+    
+    reponame=$(basename `git rev-parse --show-toplevel`)
+
+    echo "CHECKING \"github.com/$reponame\" AGAINST \"$PWD\" ===>"
+    echo ""
+
+    git fetch origin
+    git diff --stat origin master
+
+    echo "========================================================================"
+done
