@@ -12,17 +12,7 @@ do
     echo ""
 
     git fetch origin
-
-    if git diff --exit-code origin master; then
-        diff=false
-    else
-        diff=true
-    fi
-    if $diff; then
-        git diff --stat origin master
-    else
-        echo "Remote and local repos are same."
-    fi
+    git diff --stat origin master
 
     echo "========================================================================"
 done
