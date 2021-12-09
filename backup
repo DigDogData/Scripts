@@ -1,2 +1,8 @@
 #!/usr/bin/env bash
-rsync -aHv --delete --delete-excluded --exclude-from=/home/roy/Documents/Scripts/Backup/exclude_list.txt --log-file=/home/roy/Documents/Scripts/Backup/Logs/$(date +%Y%m%d)_rsync_local.log /home/roy/ /media/roy/LinBackup/home/roy
+rsync -aHv --delete --delete-excluded --exclude-from=/home/roy/Documents/Scripts/Backup/exclude_list.txt --log-file=/home/roy/Documents/Scripts/Backup/Logs/$(date +%Y%m%d)_rsync_PCBackup_linux.log /home/roy/ /media/roy/BackUp/PCBackup/home/roy
+rsync -aHv --delete --log-file=/home/roy/Documents/Scripts/Backup/Logs/$(date +%Y%m%d)_rsync_PCBackup_win10_Documents.log /media/roy/Win10/Users/Roy/Documents/ /media/roy/BackUp/PCBackup/Win10/Documents
+rsync -aHv --delete --log-file=/home/roy/Documents/Scripts/Backup/Logs/$(date +%Y%m%d)_rsync_PCBackup_win10_Downloads.log /media/roy/Win10/Users/Roy/Downloads/ /media/roy/BackUp/PCBackup/Win10/Downloads
+rsync -aHv --delete --log-file=/home/roy/Documents/Scripts/Backup/Logs/$(date +%Y%m%d)_rsync_PCBackup_win10_Pictures.log /media/roy/Win10/Users/Roy/Pictures/ /media/roy/BackUp/PCBackup/Win10/Pictures
+rsync -aHv --delete --log-file=/home/roy/Documents/Scripts/Backup/Logs/$(date +%Y%m%d)_rsync_PCBackup_win10_Music.log /media/roy/Win10/Users/Roy/Music/ /media/roy/BackUp/PCBackup/Win10/Music
+rsync -aHv --delete --log-file=/home/roy/Documents/Scripts/Backup/Logs/$(date +%Y%m%d)_rsync_PCBackup_win10_Videos.log /media/roy/Win10/Users/Roy/Videos/ /media/roy/BackUp/PCBackup/Win10/Videos
+#rsync -aHv --delete --delete-excluded --exclude-from=/home/roy/Documents/Scripts/Backup/exclude_list.txt --log-file=/home/roy/Documents/Scripts/Backup/Logs/$(date +%Y%m%d)_rsync_LinBackup.log /home/roy/ /media/roy/LinBackup/home/roy
