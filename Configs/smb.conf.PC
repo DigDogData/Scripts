@@ -9,7 +9,7 @@
     map to guest = Bad User
     usershare allow guests = yes
 
-[Homes]
+[homes]
     comment = Home Folder
     read only = no
     browseable = yes
@@ -31,7 +31,7 @@
     ;force create mode = 0664
     ;force directory mode = 0775
 
-[Printer]
+[printers]
    comment = Deskjet-895C
    browseable = no
    path = /var/spool/samba
@@ -40,9 +40,9 @@
    read only = no
    create mask = 0755
 
-;[Print$]
-   ;comment = Printer Drivers
-   ;path = /var/lib/samba/printers
-   ;browseable = yes
-   ;read only = yes
-   ;guest ok = no
+[print$]
+   comment = Printer Drivers
+   path = /var/lib/samba/printers
+   browseable = yes
+   read only = yes
+   guest ok = no
