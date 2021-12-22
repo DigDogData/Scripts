@@ -2,7 +2,7 @@
 Version=1.0
 Type=Application
 Name=Kdenlive
-Exec=/home/roy/Downloads/Apps/Kdenlive/kdenlive-21.04.3b-x86_64.appimage
+Exec=/home/roy/Downloads/Apps/Kdenlive/kdenlive-21.12.0-x86_64.appimage
 Icon=/home/roy/Downloads/Apps/Kdenlive/kdenlive-logo-CAAD792F3F-seeklogo.com.png
 Categories=AudioVideo;AudioVideoEditing;
 

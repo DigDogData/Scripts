@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 rsync -aHv --delete --delete-excluded --exclude-from=/home/roy/Documents/Scripts/Backup/exclude_PClinux.txt --log-file=/home/roy/Documents/Scripts/Backup/Logs/$(date +%Y%m%d)_rsync_PCBackup_linux.log /home/roy/ /media/roy/BackUp/PCBackup/home/roy
 
-rsync -aHv --delete --delete-excluded --exclude-from=/home/roy/Documents/Scripts/Backup/exclude_PCwin10.txt --log-file=/home/roy/Documents/Scripts/Backup/Logs/$(date +%Y%m%d)_rsync_PCBackup_win10.log /media/roy/Win10/Users/Roy/ /media/roy/BackUp/PCBackup/Win10/Roy
+rsync -aHv --delete --delete-excluded --exclude-from=/home/roy/Documents/Scripts/Backup/exclude_PCwin10.txt --log-file=/home/roy/Documents/Scripts/Backup/Logs/$(date +%Y%m%d)_rsync_PCBackup_win10.log /media/roy/Win10/Users/Roy/ /media/roy/BackUp/PCBackup/Win10/roy
 
 #rsync -aHv --delete --delete-excluded --exclude-from=/home/roy/Documents/Scripts/Backup/exclude_list.txt --log-file=/home/roy/Documents/Scripts/Backup/Logs/$(date +%Y%m%d)_rsync_LinBackup.log /home/roy/ /media/roy/LinBackup/home/roy
 

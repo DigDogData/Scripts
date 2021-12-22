@@ -1,4 +1,4 @@
-3d Objects
+3D Objects
 AppData
 Application Data
 Contacts
@@ -16,6 +16,7 @@ Searches
 SendTo
 Start Menu
 Templates
+Documents/Firefox_Profiles/Rakhi
 NTUSER.*
 ntuser.*
 desktop.ini

@@ -1,5 +1,4 @@
 .cache
-#.config/Brave*
 .hypnotix
 .fzf
 .local/lib
@@ -11,8 +10,7 @@
 .mozilla
 .pyenv
 .steam
-#.vim
 scikit_learn_data
-Documents/Firefox_Profiles
+Documents/Firefox_Profiles/Anika
+Documents/Firefox_Profiles/Rakhi
 MEGASync
-#VirtualBox*
