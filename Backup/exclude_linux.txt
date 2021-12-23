@@ -1,6 +1,8 @@
 .cache
 .hypnotix
 .fzf
+.config/mpv/watch_later
+.config/yakyak/Cache
 .local/lib
 .local/share/data
 .local/share/evolution
