@@ -20,18 +20,18 @@
     valid users = %S
     path = /mnt/home/%S
 
-[Roy]
-    comment = Home folder
-    path = /home/roy
-    read only = no
-    browseable = yes
-    guest ok = yes
-    force user = roy
-    force group = roy
-    create mask = 0664
-    directory mask = 0775
-    force create mode = 0664
-    force directory mode = 0775
+;[Roy]
+    ;comment = Home folder
+    ;path = /home/roy
+    ;read only = no
+    ;browseable = yes
+    ;guest ok = yes
+    ;force user = roy
+    ;force group = roy
+    ;create mask = 0664
+    ;directory mask = 0775
+    ;force create mode = 0664
+    ;force directory mode = 0775
 
 [printers]
    comment = Deskjet-895C
