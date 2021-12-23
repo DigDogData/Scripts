@@ -3,6 +3,5 @@
 #############################################
 # Script to back up in Toshiba HDD ("BackUp")
 #############################################
-# Backing up NBook
 rsync -aHv --delete --delete-excluded --exclude-from=/home/roy/Documents/Scripts/Backup/exclude_linux.txt --log-file=/home/roy/Documents/Scripts/Backup/Logs/$(date +%Y%m%d)_BackUp_NBook_linux.log /mnt/nbook/ /media/roy/BackUp/NBookBackup/home/roy
 
