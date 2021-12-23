@@ -15,4 +15,5 @@
 scikit_learn_data
 Documents/Firefox_Profiles/Anika
 Documents/Firefox_Profiles/Rakhi
+Downloads/tmp
 MEGASync
