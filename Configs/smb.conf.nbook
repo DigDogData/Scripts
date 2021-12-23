@@ -4,10 +4,12 @@
     workgroup = WORKGROUP
     server min protocol = NT1
     client min protocol = NT1
+    ntlm auth = yes
     ;unix extensions = yes
     security = user
     map to guest = Bad User
     usershare allow guests = yes
+    bind interfaces only = yes
 
 [homes]
     comment = Home Folder
