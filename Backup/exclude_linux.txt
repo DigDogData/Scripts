@@ -1,6 +1,7 @@
 .cache
 .hypnotix
 .fzf
+.config/BraveSoftware/Brave-Browser/Default/Service Worker/CacheStorage
 .config/mpv/watch_later
 .config/yakyak/Cache
 .local/lib
