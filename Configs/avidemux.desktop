@@ -2,7 +2,7 @@
 Version=1.0
 Type=Application
 Name=Avidemux
-Exec=/home/roy/Downloads/Apps/Avidemux/avidemuxLinux_2.7.8_GLIBC_2.28_amd64.appImage
+Exec=/home/roy/Downloads/Apps/Avidemux/avidemux_2.8.0.appImage
 Icon=/home/roy/Downloads/Apps/Avidemux/8ba3da26.png
 Categories=AudioVideo;AudioVideoEditing;
 
