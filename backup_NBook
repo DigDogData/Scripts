@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #############################################
-# Script to back up in Toshiba HDD ("BackUp")
+# Script to back up in 128G Flashdrive
 #############################################
-rsync -aHv --delete --delete-excluded --exclude-from=/home/roy/Documents/Scripts/Backup/exclude_linux.txt --log-file=/home/roy/Documents/Scripts/Backup/Logs/$(date +%Y%m%d)_BackUp_NBook_linux.log /mnt/nbook/ /media/roy/BackUp/NBookBackup/home/roy
+rsync -aHv --delete --delete-excluded --exclude-from=/home/roy/Documents/Scripts/Backup/exclude_linux.txt --log-file=/home/roy/Documents/Scripts/Backup/Logs/$(date +%Y%m%d)_BackUp_NBook_linux.log /home/roy/ /media/roy/ROY/NBookBackup/home/roy
 
